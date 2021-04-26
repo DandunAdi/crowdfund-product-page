@@ -40,92 +40,112 @@
 
     <main>
       <div class="intro container p-3 text-center">
-        <img src="./images/logo-mastercraft.svg" alt="mastercraft-logo" />
+        <img
+          class="intro__logo"
+          src="./images/logo-mastercraft.svg"
+          alt="mastercraft-logo"
+        />
         <h2 class="py-1">Mastercraft Bamboo Monitor Riser</h2>
         <p class="py-1">
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div class="py-2 flex flex__between">
           <a href="#" class="btn btn__primary">Back this project</a>
-          <a href="#" class="btn btn__secondary">Bookmark</a>
+          <a href="#" class="btn btn__secondary bookmark active">
+            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+                <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+              </g>
+            </svg>
+            Bookmark</a
+          >
         </div>
       </div>
-      <div class="container p-3">
-        <div class="flex">
-          <div>
+      <div class="stats container p-3">
+        <div class="flex py-1">
+          <div class="stats__item">
             <h1>$89,914</h1>
             <p>of $100,000 backed</p>
           </div>
-          <div>
+          <div class="stats__item">
             <h1>5,007</h1>
             <p>total backers</p>
           </div>
-          <div>
+          <div class="stats__item">
             <h1>56</h1>
             <p>days left</p>
           </div>
         </div>
+        <div class="stats__bar my-1">
+          <div class="stats__bar__progress"></div>
+        </div>
       </div>
-      <div class="container p-3">
-        <h3>About this project</h3>
-        <p>
+      <div class="project container p-3">
+        <h3 class="py-2">About this project</h3>
+        <p class="py-1">
           The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform
           that elevates your screen to a more comfortable viewing height.
           Placing your monitor at eye level has the potential to improve your
           posture and make you more comfortable while at work, helping you stay
           focused on the task at hand.
         </p>
-        <p>
+        <p class="py-1">
           Featuring artisan craftsmanship, the simplicity of design creates
           extra desk space below your computer to allow notepads, pens, and USB
           sticks to be stored under the stand.
         </p>
 
-        <div class="card p-2">
-          <div>
+        <div class="project__item card p-2 my-2">
+          <div class="flex flex__between py-1">
             <h3>Bamboo Stand</h3>
-            <p>Pledge $25 or more</p>
+            <p class="text-cyan">Pledge $25 or more</p>
           </div>
-          <p>You get an ergonomic stand made of natural bamboo.</p>
-          <div>
-            <div>
-              <h1>101</h1>
+          <p class="py-1">
+            You get an ergonomic stand made of natural bamboo. You've helped us
+            launch our promotional campaign, and you’ll be added to a special
+            Backer member list.
+          </p>
+          <div class="flex flex__between py-1">
+            <div class="flex">
+              <h1 class="stock">101</h1>
               <p>left</p>
             </div>
             <a href="#" class="btn btn__primary">Select Reward</a>
           </div>
         </div>
-        <div class="card p-2">
-          <div>
+
+        <div class="project__item card p-2 my-2">
+          <div class="flex flex__between py-1">
             <h3>Black Edition Stand</h3>
-            <p>Pledge $75 or more</p>
+            <p class="text-cyan">Pledge $75 or more</p>
           </div>
-          <p>
+          <p class="py-1">
             You get a Black Special Edition computer stand and a personal thank
             you. You’ll be added to our Backer member list. Shipping is
             included.
           </p>
-          <div>
-            <div>
-              <h1>64</h1>
+          <div class="flex flex__between">
+            <div class="flex">
+              <h1 class="stock">64</h1>
               <p>left</p>
             </div>
             <a href="#" class="btn btn__primary">Select Reward</a>
           </div>
         </div>
-        <div class="card p-2">
-          <div>
+        <div class="project__item disabled card p-2 my-2">
+          <div class="flex flex__between py-1">
             <h3>Mahogany Special Edition</h3>
-            <p>Pledge $200 or more</p>
+            <p class="text-cyan">Pledge $200 or more</p>
           </div>
-          <p>
+          <p class="py-1">
             You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
             personal thank you. You’ll be added to our Backer member list.
             Shipping is included.
           </p>
-          <div>
-            <div>
-              <h1>0</h1>
+          <div class="flex flex__between">
+            <div class="flex">
+              <h1 class="stock">0</h1>
               <p>left</p>
             </div>
             <a href="#" class="btn btn__disabled" disabled>Out of stock</a>

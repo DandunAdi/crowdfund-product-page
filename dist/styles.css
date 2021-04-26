@@ -52,11 +52,14 @@ a {
   background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
-  margin: 0.75rem 0;
 }
 
 .text-white {
   color: #fff;
+}
+
+.text-cyan {
+  color: #3cb4ac;
 }
 
 .text-center {
@@ -64,7 +67,7 @@ a {
 }
 
 .btn {
-  padding: 1rem 2.5rem;
+  padding: 1.16rem 2.5rem;
   border-radius: 2rem;
   font-weight: 500;
   display: inline-block;
@@ -81,7 +84,7 @@ a {
 
 .btn__secondary {
   background-color: #fafafa;
-  color: #147b74;
+  color: #7a7a7a;
 }
 
 .btn__secondary:hover {
@@ -89,7 +92,7 @@ a {
 }
 
 .btn__disabled {
-  background-color: #dbdbdb;
+  background-color: #7a7a7a;
   color: #fff;
   pointer-events: none;
 }
@@ -214,9 +217,73 @@ main .intro {
   position: relative;
 }
 
-main .intro img {
+main .intro__logo {
   width: 3.625rem;
   position: absolute;
   top: calc(3.625rem / -2);
+}
+
+main .intro .bookmark {
+  position: relative;
+  padding-left: 4rem;
+}
+
+main .intro .bookmark svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+main .intro .bookmark:hover svg circle {
+  fill: #7a7a7a;
+}
+
+main .intro .bookmark.active svg circle {
+  fill: #147b74;
+}
+
+main .intro .bookmark.active svg path {
+  fill: #fff;
+}
+
+main .stats .flex {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .stats__item {
+  margin-right: 2.875rem;
+}
+
+main .stats__item h1 {
+  padding-bottom: 0.5rem;
+}
+
+main .stats__item:not(:first-child) {
+  padding-left: 2.875rem;
+  border-left: 1px solid #dbdbdb;
+}
+
+main .stats__bar {
+  height: 0.75rem;
+  background-color: #fafafa;
+  border-radius: 0.75rem;
+}
+
+main .stats__bar__progress {
+  background-color: #3cb4ac;
+  height: 100%;
+  width: 75%;
+  border-radius: 0.75rem;
+}
+
+main .project__item .stock {
+  margin-right: 0.75rem;
+}
+
+main .project__item.disabled {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=styles.css.map */

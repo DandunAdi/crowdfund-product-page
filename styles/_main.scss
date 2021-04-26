@@ -1,6 +1,7 @@
 main {
   transform: translateY(-6rem);
   padding: 0 1.25rem;
+
   .container {
     background-color: #fff;
     max-width: 45.625rem;
@@ -12,10 +13,72 @@ main {
   .intro {
     position: relative;
 
-    img {
+    &__logo {
       width: 3.625rem;
       position: absolute;
       top: calc(3.625rem / -2);
+    }
+    .bookmark {
+      position: relative;
+      padding-left: 4rem;
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+
+      &:hover {
+        svg circle {
+          fill: $darkGray;
+        }
+      }
+      &.active {
+        svg circle {
+          fill: $darkCyan;
+        }
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .stats {
+    .flex {
+      justify-content: flex-start;
+    }
+    &__item {
+      margin-right: 2.875rem;
+      h1 {
+        padding-bottom: 0.5rem;
+      }
+      &:not(:first-child) {
+        padding-left: 2.875rem;
+        border-left: 1px solid $lightGray;
+      }
+    }
+    &__bar {
+      height: 0.75rem;
+      background-color: $bodyColor;
+      border-radius: 0.75rem;
+      &__progress {
+        background-color: $moderateCyan;
+        height: 100%;
+        width: 75%;
+        border-radius: 0.75rem;
+      }
+    }
+  }
+
+  .project {
+    &__item {
+      .stock {
+        margin-right: 0.75rem;
+      }
+      &.disabled {
+        opacity: 0.4;
+      }
     }
   }
 }

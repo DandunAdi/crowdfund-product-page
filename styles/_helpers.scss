@@ -39,16 +39,18 @@ a {
   background-color: #fff;
   border: 1px solid $lightGray;
   border-radius: 5px;
-  margin: 0.75rem 0;
 }
 .text-white {
   color: #fff;
+}
+.text-cyan {
+  color: $moderateCyan;
 }
 .text-center {
   text-align: center;
 }
 .btn {
-  padding: 1rem 2.5rem;
+  padding: 1.16rem 2.5rem;
   border-radius: 2rem;
   font-weight: 500;
   display: inline-block;
@@ -62,13 +64,13 @@ a {
   }
   &__secondary {
     background-color: $bodyColor;
-    color: $darkCyan;
+    color: $darkGray;
     &:hover {
       color: $darkGray;
     }
   }
   &__disabled {
-    background-color: $lightGray;
+    background-color: $darkGray;
     color: #fff;
     pointer-events: none;
   }
