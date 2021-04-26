@@ -17,6 +17,9 @@ h5,
 h6 {
   color: $black;
 }
+p {
+  line-height: 1.75;
+}
 ul {
   list-style: none;
 }
@@ -38,7 +41,7 @@ a {
 .card {
   background-color: #fff;
   border: 1px solid $lightGray;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 .text-white {
   color: #fff;
@@ -50,7 +53,7 @@ a {
   text-align: center;
 }
 .btn {
-  padding: 1.16rem 2.5rem;
+  padding: 0.9rem 1.9rem;
   border-radius: 2rem;
   font-weight: 500;
   display: inline-block;
@@ -73,6 +76,9 @@ a {
     background-color: $darkGray;
     color: #fff;
     pointer-events: none;
+  }
+  &__lg {
+    padding: 1.16rem 2.5rem;
   }
 }
 
