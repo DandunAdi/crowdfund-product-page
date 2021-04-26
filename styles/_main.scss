@@ -1,0 +1,21 @@
+main {
+  transform: translateY(-6rem);
+  padding: 0 1.25rem;
+  .container {
+    background-color: #fff;
+    max-width: 45.625rem;
+    margin: 0.75rem auto;
+    border-radius: 7px;
+    box-shadow: 0 0 2px $lightGray;
+  }
+
+  .intro {
+    position: relative;
+
+    img {
+      width: 3.625rem;
+      position: absolute;
+      top: calc(3.625rem / -2);
+    }
+  }
+}

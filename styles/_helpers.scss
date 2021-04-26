@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $mainFont;
+  color: $darkGray;
+  background-color: $bodyColor;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $darkGray;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__between {
+    justify-content: space-between;
+  }
+}
+.card {
+  background-color: #fff;
+  border: 1px solid $lightGray;
+  border-radius: 5px;
+  margin: 0.75rem 0;
+}
+.text-white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  display: inline-block;
+
+  &__primary {
+    background-color: $moderateCyan;
+    color: #fff;
+    &:hover {
+      background-color: $darkCyan;
+    }
+  }
+  &__secondary {
+    background-color: $bodyColor;
+    color: $darkCyan;
+    &:hover {
+      color: $darkGray;
+    }
+  }
+  &__disabled {
+    background-color: $lightGray;
+    color: #fff;
+    pointer-events: none;
+  }
+}
+
+@mixin py($amount) {
+  padding-top: $amount;
+  padding-bottom: $amount;
+}
+.py-1 {
+  @include py(1rem);
+}
+.py-2 {
+  @include py(1.5rem);
+}
+.py-3 {
+  @include py(2rem);
+}
+.py-4 {
+  @include py(3rem);
+}
+.py-5 {
+  @include py(4rem);
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 2rem;
+}
+.p-4 {
+  padding: 3rem;
+}
+.p-5 {
+  padding: 4rem;
+}
+
+@mixin my($amount) {
+  margin-top: $amount;
+  margin-bottom: $amount;
+}
+.my-1 {
+  @include my(1rem);
+}
+.my-2 {
+  @include my(1.5rem);
+}
+.my-3 {
+  @include my(2rem);
+}
+.my-4 {
+  @include my(3rem);
+}
+.my-5 {
+  @include my(4rem);
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 1.5rem;
+}
+.m-3 {
+  margin: 2rem;
+}
+.m-4 {
+  margin: 3rem;
+}
+.m-5 {
+  margin: 4rem;
+}

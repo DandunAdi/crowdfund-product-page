@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  color: #7a7a7a;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex__between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin: 0.75rem 0;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn__primary {
+  background-color: #3cb4ac;
+  color: #fff;
+}
+
+.btn__primary:hover {
+  background-color: #147b74;
+}
+
+.btn__secondary {
+  background-color: #fafafa;
+  color: #147b74;
+}
+
+.btn__secondary:hover {
+  color: #7a7a7a;
+}
+
+.btn__disabled {
+  background-color: #dbdbdb;
+  color: #fff;
+  pointer-events: none;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-4 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-5 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+header {
+  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../images/image-hero-desktop.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/image-hero-desktop.jpg");
+}
+
+header .navbar {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+main {
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
+  padding: 0 1.25rem;
+}
+
+main .container {
+  background-color: #fff;
+  max-width: 45.625rem;
+  margin: 0.75rem auto;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 2px #dbdbdb;
+          box-shadow: 0 0 2px #dbdbdb;
+}
+
+main .intro {
+  position: relative;
+}
+
+main .intro img {
+  width: 3.625rem;
+  position: absolute;
+  top: calc(3.625rem / -2);
+}
+/*# sourceMappingURL=styles.css.map */
