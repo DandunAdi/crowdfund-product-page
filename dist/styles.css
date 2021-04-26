@@ -225,7 +225,10 @@ main .intro__logo {
 
 main .intro .bookmark {
   position: relative;
-  padding-left: 4rem;
+}
+
+main .intro .bookmark a {
+  padding-left: 4.5rem;
 }
 
 main .intro .bookmark svg {
@@ -233,6 +236,7 @@ main .intro .bookmark svg {
   top: 0;
   left: 0;
   height: 100%;
+  pointer-events: none;
 }
 
 main .intro .bookmark:hover svg circle {
@@ -245,6 +249,10 @@ main .intro .bookmark.active svg circle {
 
 main .intro .bookmark.active svg path {
   fill: #fff;
+}
+
+main .intro .bookmark.active:hover svg circle {
+  fill: #3cb4ac;
 }
 
 main .stats .flex {
