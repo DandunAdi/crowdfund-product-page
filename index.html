@@ -26,7 +26,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="blocked">
     <header>
       <nav class="navbar p-4 flex flex__between">
         <img src="./images/logo.svg" alt="logo" />
@@ -153,7 +153,8 @@
         </div>
       </div>
     </main>
-    <section class="modal flex">
+
+    <section class="modal show">
       <div class="modal__success p-3 text-center">
         <img class="my-1" src="./images/icon-check.svg" alt="" />
         <h3 class="py-1">Thanks for your support!</h3>
@@ -163,6 +164,183 @@
           completed.
         </p>
         <a href="#" class="btn btn__primary my-2">Got it!</a>
+      </div>
+
+      <div class="modal__project container p-3 show">
+        <div class="modal__project__close">
+          <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+              fill="#000"
+              fill-rule="evenodd"
+              opacity=".4"
+            />
+          </svg>
+        </div>
+        <h3 class="my-1">Back this project</h3>
+        <p class="my-2">
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
+          the world?
+        </p>
+
+        <div class="modal__project__item card my-2 active">
+          <div class="p-2 flex">
+            <div class="radio">
+              <div></div>
+            </div>
+            <div>
+              <div class="flex flex__between">
+                <div class="modal__project__item__title">
+                  <p class="text-bold">Pledge with no reward</p>
+                </div>
+              </div>
+              <p class="py-1">
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+            </div>
+          </div>
+          <div class="modal__project__item__pledge p-2 flex flex__between">
+            <p>Enter your pledge</p>
+            <div>
+              <div class="pledge__input">
+                <p>$</p>
+                <input
+                  type="number"
+                  name="pledge"
+                  min="1"
+                  max="999"
+                  value="5"
+                />
+              </div>
+              <a href="" class="btn btn__primary">Continue</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__project__item card my-2 active">
+          <div class="p-2 flex">
+            <div class="radio">
+              <div></div>
+            </div>
+            <div>
+              <div class="flex flex__between">
+                <div class="modal__project__item__title flex">
+                  <p class="text-bold">Bamboo Stand</p>
+                  <p class="text-cyan">Pledge $25 or more</p>
+                </div>
+                <p>
+                  <span class="modal__project__item__stock text-bold">101</span>
+                  left
+                </p>
+              </div>
+              <p class="py-1">
+                You get an ergonomic stand made of natural bamboo. You've helped
+                us launch our promotional campaign, and you’ll be added to a
+                special Backer member list.
+              </p>
+            </div>
+          </div>
+          <div class="modal__project__item__pledge p-2 flex flex__between">
+            <p>Enter your pledge</p>
+            <div>
+              <div class="pledge__input">
+                <p>$</p>
+                <input
+                  type="number"
+                  name="pledge"
+                  min="25"
+                  max="999"
+                  value="25"
+                />
+              </div>
+              <a href="" class="btn btn__primary">Continue</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__project__item card my-2 active">
+          <div class="p-2 flex">
+            <div class="radio">
+              <div></div>
+            </div>
+            <div>
+              <div class="flex flex__between">
+                <div class="modal__project__item__title flex">
+                  <p class="text-bold">Black Edition Stand</p>
+                  <p class="text-cyan">Pledge $75 or more</p>
+                </div>
+                <p>
+                  <span class="modal__project__item__stock text-bold">101</span>
+                  left
+                </p>
+              </div>
+              <p class="py-1">
+                You get a Black Special Edition computer stand and a personal
+                thank you. You’ll be added to our Backer member list. Shipping
+                is included.
+              </p>
+            </div>
+          </div>
+          <div class="modal__project__item__pledge p-2 flex flex__between">
+            <p>Enter your pledge</p>
+            <div>
+              <div class="pledge__input">
+                <p>$</p>
+                <input
+                  type="number"
+                  name="pledge"
+                  min="75"
+                  max="999"
+                  value="75"
+                />
+              </div>
+              <a href="" class="btn btn__primary">Continue</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__project__item card my-2 disabled">
+          <div class="p-2 flex">
+            <div class="radio">
+              <div></div>
+            </div>
+            <div>
+              <div class="flex flex__between">
+                <div class="modal__project__item__title flex">
+                  <p class="text-bold">Mahogany Special Edition</p>
+                  <p class="text-cyan">Pledge $200 or more</p>
+                </div>
+                <p>
+                  <span class="modal__project__item__stock text-bold">0</span>
+                  left
+                </p>
+              </div>
+              <p class="py-1">
+                You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                and a personal thank you. You’ll be added to our Backer member
+                list. Shipping is included.
+              </p>
+            </div>
+          </div>
+          <div class="modal__project__item__pledge p-2 flex flex__between">
+            <p>Enter your pledge</p>
+            <div>
+              <div class="pledge__input">
+                <p>$</p>
+                <input
+                  type="number"
+                  name="pledge"
+                  min="25"
+                  max="999"
+                  value="25"
+                />
+              </div>
+              <a href="" class="btn btn__primary">Continue</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     About Discover Get Started Mastercraft Bamboo Monitor Riser A beautiful &

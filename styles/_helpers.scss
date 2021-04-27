@@ -8,6 +8,9 @@ body {
   font-family: $mainFont;
   color: $darkGray;
   background-color: $bodyColor;
+  &.blocked {
+    overflow: hidden;
+  }
 }
 h1,
 h2,
@@ -28,6 +31,14 @@ a {
   text-decoration: none;
   color: $darkGray;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 .flex {
   display: flex;
@@ -42,6 +53,10 @@ a {
   background-color: #fff;
   border: 1px solid $lightGray;
   border-radius: 0.5rem;
+  &.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }
 .text-white {
   color: #fff;
@@ -51,6 +66,9 @@ a {
 }
 .text-center {
   text-align: center;
+}
+.text-bold {
+  font-weight: 700;
 }
 .btn {
   padding: 0.9rem 1.9rem;
@@ -79,6 +97,24 @@ a {
   }
   &__lg {
     padding: 1.16rem 2.5rem;
+  }
+}
+.radio {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.3125rem;
+  border: 1px solid $lightGray;
+  border-radius: calc(1.5rem / 2);
+
+  div {
+    background-color: #fff;
+    min-width: 0.75rem;
+    min-height: 0.75rem;
+    border-radius: calc(0.75rem / 2);
+  }
+
+  &.active div {
+    background-color: $darkCyan;
   }
 }
 

@@ -5,10 +5,111 @@
   width: 100%;
   height: 100%;
   background-color: rgba($color: #000000, $alpha: 0.5);
+  display: none;
+  overflow-y: auto;
+  padding: 11.5rem 1.25rem;
+
+  &.show {
+    display: flex;
+  }
 
   &__success {
     background-color: #fff;
     border-radius: 0.5rem;
     max-width: 33.75rem;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__project {
+    background-color: #fff;
+    max-width: 45.625rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    display: none;
+    position: relative;
+
+    &__close {
+      right: 1.5rem;
+      position: absolute;
+      top: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
+
+      &:hover svg path {
+        opacity: 1;
+      }
+    }
+
+    &__item {
+      cursor: pointer;
+
+      &.active {
+        border: 2px solid $moderateCyan;
+        .radio div {
+          background-color: $darkCyan;
+        }
+        .modal__project__item__pledge {
+          display: flex;
+        }
+      }
+
+      div:first-child {
+        align-items: flex-start;
+      }
+
+      .radio {
+        margin-right: 1.5rem;
+        margin-top: 0.25rem;
+      }
+
+      &__title p:first-child {
+        margin-right: 1rem;
+        color: $black;
+      }
+      &__stock {
+        font-size: 1.125rem;
+        color: $black;
+      }
+      &:hover {
+        .modal__project__item__title p:first-child {
+          color: $moderateCyan;
+        }
+      }
+
+      &__pledge {
+        border-top: 1px solid $lightGray;
+        display: none;
+      }
+    }
+  }
+}
+.show {
+  display: block;
+}
+.pledge__input {
+  position: relative;
+  display: inline-block;
+  p {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+
+    font-weight: 700;
+  }
+  input {
+    padding: 0.9rem 1.9rem 0.9rem 3rem;
+    font-weight: 700;
+    font-family: $mainFont;
+    font-size: 1rem;
+    border-radius: 5rem;
+    border: 1px solid $lightGray;
+  }
+
+  input:focus {
+    outline: none;
   }
 }
