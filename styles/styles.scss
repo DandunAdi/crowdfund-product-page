@@ -3,6 +3,7 @@
 @import "./header";
 @import "./main";
 @import "./modal";
+@import "./mobile-menu";
 
 @media (max-width: 48rem) {
   header {
@@ -12,17 +13,11 @@
     background-position: center;
 
     .navbar {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-
-      ul {
-        display: none;
-      }
-      .hamburger {
-        cursor: pointer;
-        padding: 0.375rem;
-      }
+      display: none;
     }
+  }
+  .mobile-navbar {
+    display: flex;
   }
   main {
     .intro .bookmark {
@@ -31,6 +26,8 @@
       }
       svg {
         position: initial;
+        cursor: pointer;
+        pointer-events: all;
       }
     }
     .stats div:first-child {

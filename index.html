@@ -21,7 +21,6 @@
     <header>
       <nav class="navbar p-4 flex flex__between">
         <img src="./images/logo.svg" alt="logo" />
-        <img class="hamburger" src="./images/icon-hamburger.svg" alt="menu">
         <ul class="flex">
           <li><a href="#" class="text-white p-1">About</a></li>
           <li><a href="#" class="text-white p-1">Discover</a></li>
@@ -29,6 +28,12 @@
         </ul>
       </nav>
     </header>
+
+
+    <nav class="mobile-navbar p-4 flex flex__between">
+      <img src="./images/logo.svg" alt="logo" />
+      <img class="hamburger" src="./images/icon-hamburger.svg" alt="menu">
+    </nav>
 
     <div class="mobile-menu">
       <nav class=" container m-2">
@@ -52,15 +57,15 @@
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div class="py-2 flex flex__between">
-          <a href="#" class="btn btn__primary btn__lg">Back this project</a>
-          <div class="bookmark active">
+          <a id="backThisProject" class="btn btn__primary btn__lg">Back this project</a>
+          <div class="bookmark">
             <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
                 <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
                 <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
               </g>
             </svg>
-            <a href="#" class="btn btn__secondary btn__lg">Bookmark</a>
+            <a class="btn btn__secondary btn__lg">Bookmark</a>
           </div>
         </div>
       </div>
@@ -113,7 +118,7 @@
               <h1 class="stock">101</h1>
               <p>left</p>
             </div>
-            <a href="#" class="btn btn__primary">Select Reward</a>
+            <a class="select-reward btn btn__primary">Select Reward</a>
           </div>
         </div>
 
@@ -132,7 +137,7 @@
               <h1 class="stock">64</h1>
               <p>left</p>
             </div>
-            <a href="#" class="btn btn__primary">Select Reward</a>
+            <a class="select-reward btn btn__primary">Select Reward</a>
           </div>
         </div>
         <div class="project__item disabled card p-2 my-2">
@@ -150,7 +155,7 @@
               <h1 class="stock">0</h1>
               <p>left</p>
             </div>
-            <a href="#" class="btn btn__disabled" disabled>Out of stock</a>
+            <a class="btn btn__disabled" disabled>Out of stock</a>
           </div>
         </div>
       </div>
@@ -165,10 +170,10 @@
           Monitor Riser worldwide. You will get an email once our campaign is
           completed.
         </p>
-        <a href="#" class="btn btn__primary my-2">Got it!</a>
+        <a class="modal__success__close btn btn__primary my-2">Got it!</a>
       </div>
 
-      <div class="modal__project container p-3 show">
+      <div class="modal__project container p-3">
         <div class="modal__project__close">
           <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -185,7 +190,7 @@
           the world?
         </p>
 
-        <div class="modal__project__item card my-2 active">
+        <div class="modal__project__item card my-2 ">
           <div class="p-2 flex">
             <div class="radio">
               <div></div>
@@ -216,12 +221,12 @@
                   value="5"
                 />
               </div>
-              <a href="" class="btn btn__primary">Continue</a>
+              <a class="btn btn__primary">Continue</a>
             </div>
           </div>
         </div>
 
-        <div class="modal__project__item card my-2 active">
+        <div class="modal__project__item card my-2 ">
           <div class="p-2 flex">
             <div class="radio">
               <div></div>
@@ -257,12 +262,12 @@
                   value="25"
                 />
               </div>
-              <a href="" class="btn btn__primary">Continue</a>
+              <a class="btn btn__primary">Continue</a>
             </div>
           </div>
         </div>
 
-        <div class="modal__project__item card my-2 active">
+        <div class="modal__project__item card my-2 ">
           <div class="p-2 flex">
             <div class="radio">
               <div></div>
@@ -298,7 +303,7 @@
                   value="75"
                 />
               </div>
-              <a href="" class="btn btn__primary">Continue</a>
+              <a class="btn btn__primary">Continue</a>
             </div>
           </div>
         </div>
@@ -345,5 +350,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./app.js"></script>
   </body>
 </html>

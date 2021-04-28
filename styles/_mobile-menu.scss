@@ -1,0 +1,39 @@
+.mobile-navbar {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  z-index: 5;
+  display: none;
+
+  .hamburger {
+    cursor: pointer;
+
+    &.open {
+      content: url("../images/icon-close-menu.svg");
+    }
+  }
+}
+.mobile-menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: none;
+  padding-top: 5rem;
+
+  a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $black;
+  }
+  li:not(:last-child) {
+    border-bottom: 1px solid $lightGray;
+  }
+}

@@ -33,6 +33,9 @@ main {
         }
       }
       &.active {
+        a:after {
+          content: "ed";
+        }
         svg circle {
           fill: $darkCyan;
         }
