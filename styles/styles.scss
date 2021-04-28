@@ -19,6 +19,15 @@
   .mobile-navbar {
     display: flex;
   }
+  .modal {
+    padding-top: 3rem;
+    &__success {
+      margin: auto 1.5rem;
+      left: 0;
+      top: 5%;
+      transform: translate(0, 0);
+    }
+  }
   main {
     .intro .bookmark {
       a {
